@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="CSS/styles.css">
-        <script src="Scripts/script1.js"></script>
+        <title>Form Validator</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script1.js"></script>
     </head>
 
     <body>
-        <h1>SITE WORKS!!!</h1>
-        <button>Aperte</button>
+        <div class="center"><h1>INPUT FORM</h1></div>
+        <div class="center">
+            <form id="clientForm" onsubmit="validateForm()">
+                <label>Name:</label><br>
+                <input type="text" id="clientName"><br>
+                <label>Surname:</label><br>
+                <input type="text" id="clientSurname"><br>
+                <input type="radio" id="male" name="clientGender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="clientGender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="clientGender" value="other">
+                <label for="other">Other</label><br>
+                <label>Cellphone:</label><br>
+                <input type="tel" id="clientCellPhone"><br>
+                <label>E-mail:</label><br>
+                <input type="email" id="clientEmail"><br>
+                <input type="reset">
+                <input type="submit" id="submitButton" value="Send"><br> 
+            </form>
+        </div>
+     
     </body>
 
 </html>
