@@ -12,9 +12,9 @@
         <div class="center">
             <form id="clientForm" onsubmit="validateForm()">
                 <label>Name:</label><br>
-                <input type="text" id="clientName"><br>
+                <input type="text" id="clientName" required><br>
                 <label>Surname:</label><br>
-                <input type="text" id="clientSurname"><br>
+                <input type="text" id="clientSurname" required><br>
                 <input type="radio" id="male" name="clientGender" value="male">
                 <label for="male">Male</label><br>
                 <input type="radio" id="female" name="clientGender" value="female">
@@ -22,14 +22,17 @@
                 <input type="radio" id="other" name="clientGender" value="other">
                 <label for="other">Other</label><br>
                 <label>Cellphone:</label><br>
-                <input type="tel" id="clientCellPhone"><br>
+                <input type="tel" id="clientCellPhone" pattern="[0-9,-]{10}" placeholder="#####-####" minlength="10" maxlength="10"><br>
                 <label>E-mail:</label><br>
-                <input type="email" id="clientEmail"><br>
+                <input type="email" id="clientEmail" required><br>
                 <input type="reset">
                 <input type="submit" id="submitButton" value="Send"><br> 
             </form>
+            <div>
+                <a class="click-me" href="about.html">About</a>
+            </div>
         </div>
-     
+
     </body>
 
 </html>
